@@ -1,5 +1,6 @@
+
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
+  navigator.serviceWorker.register('./sw.js');
 }
 
 document.querySelector('#show').addEventListener('click', () => {
@@ -8,6 +9,7 @@ document.querySelector('#show').addEventListener('click', () => {
   imgElement.src = iconUrl;
   document.querySelector('#container').appendChild(imgElement);
 });
+
 
 /*
 window.onload = () => {
