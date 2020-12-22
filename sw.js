@@ -7,6 +7,9 @@ const PRECACHE_URLS = [
   './', // Alias for index.html
   'css/style.css',
   'js/main.js',
+  'images/hello-icon-192.png',
+  'images/hello-icon-512.png',
+  'favicon.ico',
   'sw.js'
 ];
 
