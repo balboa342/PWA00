@@ -16,7 +16,7 @@ const PRECACHE_URLS = [
   'favicon.ico',
   'sw.js'
 ];
-
+/*
 window.addEventListener('beforeinstallprompt', (event) => {
   console.log('👍', 'beforeinstallprompt', event);
   // Stash the event so it can be triggered later.
@@ -48,7 +48,7 @@ butInstall.addEventListener('click', () => {
 window.addEventListener('appinstalled', (event) => {
   console.log('👍', 'appinstalled', event);
 });
-
+*/
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
   event.waitUntil(
