@@ -1,3 +1,12 @@
+window.onload = () => {
+	'use strict';
+	
+	if('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('./sw.js');
+	}
+}
+
+/*
 function regSW(){
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js');
@@ -9,14 +18,5 @@ document.querySelector('#show').addEventListener('click', () => {
   imgElement.src = iconUrl;
   document.querySelector('#container').appendChild(imgElement);
 });
-}
-
-/*
-window.onload = () => {
-	'use strict';
-	
-	if('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('./sw.js');
-	}
 }
 */
